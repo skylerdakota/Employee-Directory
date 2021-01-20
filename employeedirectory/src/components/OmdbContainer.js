@@ -13,12 +13,12 @@ class OmdbContainer extends Component {
     search: ""
   };
 
-  // When this component mounts, search for the movie "The Matrix"
+  // When this component mounts, search for the name "Andrew"
   componentDidMount() {
-    this.searchMovies("The Matrix");
+    this.searchDirectory("Andrew);
   }
 
-  searchMovies = query => {
+  searchDirectory = query => {
     API.search(query)
       .then(res => this.setState({ result: res.data }))
       .catch(err => console.log(err));
@@ -35,7 +35,7 @@ class OmdbContainer extends Component {
   // When the form is submitted, search the OMDB API for the value of `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchMovies(this.state.search);
+    this.searchDirectory(this.state.search);
   };
 
   render() {
@@ -44,15 +44,15 @@ class OmdbContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for a Movie to Begin"}
+              heading={this.state.result.Name || "Search for an Employee to Begin"}
             >
               {this.state.result.Title ? (
-                <MovieDetail
-                  title={this.state.result.Title}
-                  src={this.state.result.Poster}
-                  director={this.state.result.Director}
-                  genre={this.state.result.Genre}
-                  released={this.state.result.Released}
+                <EmployeeDetail
+                  Image={this.state.result.Image}
+                  Name={this.state.result.Name}
+                  Phone={this.state.result.Poster}
+                  Email={this.state.result.Email}
+                  DOB={this.state.result.DOB}
                 />
               ) : (
                 <h3>No Results to Display</h3>
