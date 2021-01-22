@@ -4,7 +4,7 @@ import Row from "./Row";
 import Col from "./Col";
 import Card from "./Card";
 import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
+import EmployeeDetail from "./EmployeeDetail";
 import API from "../utils/API";
 
 class OmdbContainer extends Component {
@@ -15,7 +15,7 @@ class OmdbContainer extends Component {
 
   // When this component mounts, search for the name "Andrew"
   componentDidMount() {
-    this.searchDirectory("Andrew);
+    this.searchDirectory("Andrew");
   }
 
   searchDirectory = query => {
