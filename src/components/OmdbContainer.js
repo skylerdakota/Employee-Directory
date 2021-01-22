@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Container from "./Container";
 import Row from "./Row";
-import Col from "./Col";
+import Col from "./Column";
 import Card from "./Card";
-import SearchForm from "./SearchForm";
+import SearchForm from "./EmployeeDetail";
 import EmployeeDetail from "./EmployeeDetail";
 import API from "../utils/API";
 

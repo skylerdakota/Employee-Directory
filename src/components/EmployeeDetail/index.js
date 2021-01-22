@@ -13,4 +13,4 @@ function EmployeeDetail(props) {
   );
 }
 
-export default MovieDetail;
+export default EmployeeDetail;
