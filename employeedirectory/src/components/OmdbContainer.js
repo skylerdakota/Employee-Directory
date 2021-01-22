@@ -48,11 +48,11 @@ class OmdbContainer extends Component {
             >
               {this.state.result.Title ? (
                 <EmployeeDetail
-                  Image={this.state.result.Image}
-                  Name={this.state.result.Name}
-                  Phone={this.state.result.Poster}
-                  Email={this.state.result.Email}
-                  DOB={this.state.result.DOB}
+                  Image={this.state.result.picture}
+                  Name={this.state.result.name}
+                  Phone={this.state.result.phone}
+                  Email={this.state.result.email}
+                  DOB={this.state.result.dob}
                 />
               ) : (
                 <h3>No Results to Display</h3>
