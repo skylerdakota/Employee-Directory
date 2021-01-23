@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className= "text-center">
         <h2>Employee Directory</h2>
-        <p>Click on carrots to filter by heading or use the search box to narrow your results</p>
+        <p>Click on name to sort alphabetically or use the search box to narrow your results</p>
       </div>
    </nav>
   );

@@ -8,7 +8,7 @@ div.form-group{
   text-align: center;
 }
 
-/* form.search button[type="submit"] {
-  float: right;
-  margin-top: 10px;
-} */
+button{
+  background-color: cornflowerblue;
+  color: white;
+}
