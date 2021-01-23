@@ -1,9 +1,14 @@
-form.search {
+.input#search.form-control {
   overflow: auto;
-  margin-bottom: 10px;
+  border-color: cyan;
+  border-width: 2px;
 }
 
-form.search button[type="submit"] {
+div.form-group{
+  text-align: center;
+}
+
+/* form.search button[type="submit"] {
   float: right;
   margin-top: 10px;
-}
+} */
