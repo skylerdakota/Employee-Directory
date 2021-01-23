@@ -4,7 +4,6 @@ import Row from "./Row";
 import Column from "./Column";
 // import Card from "../components/Card";
 import SearchForm from "./SearchForm";
-// import EmployeeDetail from "../../../Coding-Quiz/Ignore/EmployeeDetail";
 // import Wrapper from "../components/Wrapper";
 import Table from "./Table";
 import API from "../utils/API";
@@ -40,7 +39,9 @@ class EmployeeContainer extends Component {
   // When the form is submitted, search the API for the value of `this.state.search`
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchDirectory(this.state.search);
+    const search = (this.state.search);
+    const filterEmployees = this.state.employees.filter
+    this.setState({employees: filterEmployees})
   };
 
   render() {
@@ -74,3 +75,7 @@ class EmployeeContainer extends Component {
 }
 
 export default EmployeeContainer;
+
+//not rendering api call info?
+//not able to make distinct rows/columns?
+//clickable sort/filter feature
